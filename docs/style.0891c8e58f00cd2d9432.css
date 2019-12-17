@@ -7679,7 +7679,20 @@ p {
 
 @media screen and (max-width: 567px) {
   .btn-buy {
-    font-size: 16px !important; } }
+    font-size: 16px !important; }
+  .warranty {
+    font-family: Georgia, serif;
+    position: relative;
+    background-image: url(img/cer-bg-1.jpg);
+    border: 25px solid;
+    border-image: url(img/frame-3.jpg);
+    border-image-slice: 8%;
+    border-image-repeat: repeat;
+    overflow: hidden;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 50px; }
+    .warranty p {
+      text-align: left; } }
 
 @media screen and (max-width: 767px) {
   .counter-items-left .conter_label {
@@ -7689,6 +7702,21 @@ p {
 @media screen and (max-width: 1200px) {
   main > .warranty {
     max-height: none; } }
+
+@media (min-width: 576px) {
+  .warranty {
+    font-family: Georgia, serif;
+    position: relative;
+    background-image: url(img/cer-bg-1.jpg);
+    border: 46px solid;
+    border-image: url(img/frame-3.jpg);
+    border-image-slice: 8%;
+    border-image-repeat: repeat;
+    overflow: hidden;
+    padding: 20px 20px 80px 20px;
+    margin-bottom: 50px; }
+    .warranty p {
+      text-align: left; } }
 
 .odometer.odometer-auto-theme, .odometer.odometer-theme-train-station {
   display: inline-block;
@@ -7960,6 +7988,19 @@ main h2 {
 .fa-star:before {
   color: #ffe216; }
 
+.hel {
+  position: relative;
+  z-index: 4; }
+  .hel .warranty-head {
+    font-size: 28px;
+    font-weight: 700;
+    color: #5b5b5b; }
+  .hel .seal {
+    width: 150px;
+    position: absolute;
+    z-index: 50;
+    right: 1%; }
+
 @media (max-width: 767px) {
   .satisfaction {
     right: 160px;
@@ -8041,8 +8082,7 @@ main h2 {
     z-index: 50;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
-    bottom: -5%; }
+    transform: translate(-50%, 0); }
 
 .warranty {
   margin-bottom: 48px;
