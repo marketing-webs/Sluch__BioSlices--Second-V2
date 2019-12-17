@@ -1,0 +1,74 @@
+.thanks-box{
+    background-color: #00B02A;
+    color: #fff;
+    padding: 10px;
+}
+.thanks-box > p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: -.1px;
+}
+td{
+    border: 1px solid #000;
+    padding: 0 20px;
+}
+th{
+    border: 1px solid #000;
+    background-color: #00B02A;
+    color: #fff;
+    padding: 10px 0;
+}
+p{
+    font-size: 17px;
+}
+.summary{
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.old-price{
+    color: red;
+    font-weight: 700;
+}
+.new-price{
+    color: green;
+    font-weight: 700;
+}
+.btn-area{
+    padding: 20px;
+    text-align: center;
+}
+.btn-dark{
+    color: #bfbfbf;
+}
+@media screen and (max-width: 800px) {
+    .summary{
+        width: 100%;
+    }
+}
+.thanks{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+    float: right;
+    text-align: right;
+}
+.hand-ok-span{
+    position: relative;
+    padding-left: 30px;
+}
+.hand-ok-span::before{
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: -5px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/ok_hand.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

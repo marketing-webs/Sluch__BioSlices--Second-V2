@@ -1,0 +1,113 @@
+.form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  background: rgb(231, 230, 230);
+  margin-bottom: 20px;
+
+  ///box-shadow: 0 0 120px 3px rgba(119, 119, 119, 0.2);
+  border: 1px solid #fff;
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+.form-el > p {
+  margin: 0;
+}
+.post-code {
+  width: 150px;
+}
+.form-el {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.form-control {
+  width: 70%;
+}
+input,
+.input-tooltip {
+  width: 70%;
+
+  .form-control {
+    width: 100%;
+  }
+}
+.form-el--postCode {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+.form > .form-el > label {
+  font-weight: bold;
+  width: 28%;
+}
+.btn-order {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 900;
+}
+legend {
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: -12px;
+}
+.myTooltip {
+  background: #e4e4e4;
+  position: absolute;
+  right: 5px;
+  top: 15%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 11px;
+}
+.myTooltip:hover {
+  border: 1px solid #000;
+  background: #cfcfcf;
+}
+.myTooltip:hover {
+  cursor: pointer;
+}
+textarea {
+  height: 80px;
+  min-height: 80px;
+  max-height: 300px;
+}
+.error {
+  color: red;
+}
+#postalCode-error,
+#city-error {
+  display: block;
+  position: absolute;
+  top: 70px;
+}
+#city-error {
+  right: 0;
+}
+@media screen and (max-width: 576px) {
+  .form {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .form {
+    width: 100%;
+  }
+}
+.input-tooltip {
+  position: relative;
+  width: 70%;
+}
+table.summary-tbl > tbody > tr > td {
+  padding: 0 10px 0 10px;
+}
+.form-el__required-star {
+  color: #ff5100;
+}
