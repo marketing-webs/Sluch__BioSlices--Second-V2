@@ -1,17 +1,49 @@
 @media screen and (max-width: 567px) {
-    .btn-buy{
-        font-size: 16px !important;
+  .btn-buy {
+    font-size: 16px !important;
+  }
+  .warranty {
+    font-family: Georgia, serif;
+    position: relative;
+    background-image: url(../img/cer-bg-1.jpg);
+    border: 25px solid;
+    border-image: url("../img/frame-3.jpg");
+    border-image-slice: 8%;
+    border-image-repeat: repeat;
+    overflow: hidden;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 50px;
+    p {
+      text-align: left;
     }
+  }
 }
 @media screen and (max-width: 767px) {
-    .counter-items-left .conter_label{
-        max-width: 100%;
-        width: 100%;
-    }
-    
+  .counter-items-left .conter_label {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1200px) {
-    main > .warranty{
-        max-height: none;
+  main > .warranty {
+    max-height: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .warranty {
+    font-family: Georgia, serif;
+    position: relative;
+    background-image: url(../img/cer-bg-1.jpg);
+    border: 46px solid;
+    border-image: url("../img/frame-3.jpg");
+    border-image-slice: 8%;
+    border-image-repeat: repeat;
+    overflow: hidden;
+    padding: 20px 20px 80px 20px;
+    margin-bottom: 50px;
+    p {
+      text-align: left;
     }
+  }
 }
