@@ -52,12 +52,13 @@ del,
 }
 
 .header-main {
-  color: #94571b;
-  font-weight: 400;
+  color: #820000;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-weight: bold;
   line-height: 1em;
   font-size: 40px;
   word-wrap: normal;
-  text-align: center;
 }
 
 h2 {
@@ -142,9 +143,24 @@ p {
 }
 
 .wrap {
-  background-color: $white;
+  margin: 0 auto;
+  padding: 20px 10px;
+  min-height: 500px;
+  width: 960px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background: #fff;
+  color: #3d3d3d;
+  font-size: 16px;
+  font-family: georgia;
+  line-height: 25px;
+  max-width: 980px;
+  width: 100%;
+}
 
-  max-width: 1044px;
+.main-content {
+  margin: 20px;
+  max-width: 630px;
 }
 
 .navbar-brand {
@@ -222,8 +238,8 @@ main {
 
 @media (max-width: 767px) {
   .satisfaction {
-    right: 160px;
-    bottom: 180px;
+    right: 213px;
+    bottom: 48%;
   }
 }
 
@@ -235,7 +251,8 @@ main {
 
 @media (max-width: 450px) {
   .satisfaction {
-    right: 50px;
+    right: 9px;
+    top: 32%;
   }
 
   .product {
@@ -283,16 +300,6 @@ main {
   }
 }
 
-/*.img-label {
-    display: inline-table;
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
-    width: 100%;
-    background-color: #d4d4d4;
-    font-family: 'Lato', sans-serif;
-}*/
-
 .yellow-box {
   background-color: #ffffec;
   padding: 15px;
@@ -305,7 +312,7 @@ main {
     line-height: 1.6em;
   }
 }
-
+// warranty ---->
 .hel {
   position: relative;
   z-index: 4;
@@ -338,8 +345,6 @@ main {
   margin-bottom: 48px;
   margin-top: 48px;
   border-radius: 10px;
-  border: 2px solid #dc6d00;
-  background: #e8eeef;
   padding: 12px 24px;
   text-align: center;
 }
@@ -382,6 +387,14 @@ ol > li > p {
   font-size: 16px !important;
 }
 
+.hvr-scale {
+  &:hover {
+    transform: scale(1.4);
+    background-color: white;
+    transition: 0.3s ease 0.3s;
+  }
+}
+
 .footer {
   a {
     color: grey;
@@ -396,47 +409,6 @@ ol > li > p {
     font-family: "Lato", sans-serif;
   }
 }
-
-/*yellow box with picture and text*/
-//.yellow-box {
-//    padding: 10px;
-//    background-color: #FFFFEE;
-//    border: 2px solid rgb(238, 238, 238);
-//    font-size: 14px;
-//    margin-bottom: 15px;
-//
-//    img {
-//        max-width: 40%;
-//        margin-bottom: 10px;
-//        float: left;
-//        margin-right: 10px;
-//
-//
-//    }
-//
-//    div.info {
-//        display: block;
-//        font-size: 12px;
-//
-//        p:first-child {
-//            color: #7D4131;
-//            font-size: 18px;
-//        }
-//
-//        p {
-//            font-size: 14px;
-//
-//        }
-//    }
-//
-//    p.text-right {
-//        font-size: 14px;
-//        color: #7D4131;
-//        margin-bottom: 0;
-//    }
-//}
-
-/* yellow box end*/
 
 figcaption {
   max-width: 630px;
@@ -474,7 +446,6 @@ figcaption {
 
 .results {
   text-align: center;
-  margin-top: 20px;
 }
 
 .results h3 {
@@ -597,7 +568,7 @@ li {
   }
   .doc {
     float: right;
-    width: 100%;
+    width: 50%;
   }
 
   .header-main {
