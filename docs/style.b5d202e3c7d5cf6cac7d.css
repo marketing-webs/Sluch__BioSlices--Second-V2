@@ -7684,9 +7684,6 @@ p {
   .warranty {
     font-family: Georgia, serif;
     position: relative;
-    background-image: url(img/cer-bg-1.jpg);
-    border: 25px solid;
-    border-image: url(img/frame-3.jpg);
     border-image-slice: 8%;
     border-image-repeat: repeat;
     overflow: hidden;
@@ -7708,14 +7705,10 @@ p {
   .warranty {
     font-family: Georgia, serif;
     position: relative;
-    background-image: url(img/cer-bg-1.jpg);
-    border: 46px solid;
-    border-image: url(img/frame-3.jpg);
     border-image-slice: 8%;
     border-image-repeat: repeat;
     overflow: hidden;
-    padding: 20px 20px 80px 20px;
-    margin-bottom: 50px; }
+    padding: 20px 20px 80px 20px; }
     .warranty p {
       text-align: left; } }
 
@@ -7846,7 +7839,7 @@ p {
 
 body {
   background: #efefef;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Georgia", sans-serif; }
 
 .shipping,
 .special,
@@ -7878,10 +7871,14 @@ del,
   font-size: 40px;
   word-wrap: normal; }
 
+.main-list li {
+  margin-bottom: 15px; }
+
 h2 {
   font-weight: 700;
-  color: #d20e18;
-  font-size: 24px; }
+  color: red;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .info-box {
   position: fixed;
@@ -7915,7 +7912,7 @@ h2 {
     font-weight: bold; }
 
 .doc {
-  float: right;
+  float: left;
   width: 30%;
   margin-left: 15px; }
 
@@ -8012,11 +8009,6 @@ main h2 {
     font-size: 28px;
     font-weight: 700;
     color: #5b5b5b; }
-  .hel .seal {
-    width: 150px;
-    position: absolute;
-    z-index: 50;
-    right: 1%; }
 
 @media (max-width: 767px) {
   .satisfaction {
@@ -8091,11 +8083,11 @@ main h2 {
     z-index: 50;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0); }
+    transform: translate(-50%, 0);
+    right: 1%;
+    bottom: 0px; }
 
 .warranty {
-  margin-bottom: 48px;
-  margin-top: 48px;
   border-radius: 10px;
   padding: 12px 24px;
   text-align: center; }
@@ -8132,9 +8124,16 @@ ol > li > p {
   font-size: 16px !important; }
 
 .hvr-scale:hover {
-  transform: scale(1.4);
   background-color: white;
-  transition: 0.3s ease 0.3s; }
+  transition: 0.3s ease 0.3s;
+  z-index: 100;
+  box-shadow: 12px 20px 10px -10px rgba(196, 194, 194, 0.5); }
+
+.hvr-scaleLeft:hover {
+  transform: scale(1.4) translateX(117px); }
+
+.hvr-scaleRight:hover {
+  transform: scale(1.4) translateX(-137px); }
 
 .footer a {
   color: grey;
@@ -8155,19 +8154,24 @@ figcaption {
 
 .green-ordered-list {
   list-style: none;
-  counter-reset: my-awesome-counter; }
+  counter-reset: my-awesome-counter;
+  margin-bottom: 20px; }
+  .green-ordered-list p {
+    color: black; }
+  .green-ordered-list h2 {
+    text-transform: uppercase; }
 
 .green-ordered-list li {
-  counter-increment: my-awesome-counter; }
+  counter-increment: my-awesome-counter;
+  color: red; }
 
 .green-ordered-list li::before {
   content: counter(my-awesome-counter, upper-roman) ". ";
-  color: green;
+  color: black;
   font-weight: bold;
   position: absolute;
   font-size: 25px;
-  left: 20px;
-  margin-top: 6px; }
+  left: 12px; }
 
 .highlighted {
   display: inline-block; }
