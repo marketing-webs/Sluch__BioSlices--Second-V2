@@ -14,7 +14,7 @@
 
 body {
   background: #efefef;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Georgia", sans-serif;
 }
 
 .shipping,
@@ -61,10 +61,17 @@ del,
   word-wrap: normal;
 }
 
+.main-list {
+  li {
+    margin-bottom: 15px;
+  }
+}
+
 h2 {
   font-weight: 700;
-  color: #d20e18;
+  color: red;
   font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
   //    margin-left: 10px;
   // padding-left: 10px;
 }
@@ -110,7 +117,7 @@ h2 {
 }
 
 .doc {
-  float: right;
+  float: left;
   width: 30%;
   margin-left: 15px;
 }
@@ -228,13 +235,6 @@ main {
     font-weight: 700;
     color: #5b5b5b;
   }
-  .seal {
-    width: 150px;
-    position: absolute;
-    z-index: 50;
-    right: 1%;
-    top: -32px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -339,12 +339,12 @@ main {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    right: 1%;
+    bottom: 0px;
   }
 }
 
 .warranty {
-  margin-bottom: 48px;
-  margin-top: 48px;
   border-radius: 10px;
   padding: 12px 24px;
   text-align: center;
@@ -390,9 +390,20 @@ ol > li > p {
 
 .hvr-scale {
   &:hover {
-    transform: scale(1.4);
     background-color: white;
     transition: 0.3s ease 0.3s;
+    z-index: 100;
+    box-shadow: 12px 20px 10px -10px rgba(196, 194, 194, 0.5);
+  }
+  &Left {
+    &:hover {
+      transform: scale(1.4) translateX(117px);
+    }
+  }
+  &Right {
+    &:hover {
+      transform: scale(1.4) translateX(-137px);
+    }
   }
 }
 
@@ -423,18 +434,25 @@ figcaption {
 .green-ordered-list {
   list-style: none;
   counter-reset: my-awesome-counter;
+  margin-bottom: 20px;
+  p {
+    color: black;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
 }
 .green-ordered-list li {
   counter-increment: my-awesome-counter;
+  color: red;
 }
 .green-ordered-list li::before {
   content: counter(my-awesome-counter, upper-roman) ". ";
-  color: green;
+  color: black;
   font-weight: bold;
   position: absolute;
   font-size: 25px;
-  left: 20px;
-  margin-top: 6px;
+  left: 12px;
 }
 
 .highlighted {
