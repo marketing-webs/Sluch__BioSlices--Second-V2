@@ -7705,6 +7705,12 @@ p {
   main > .warranty {
     max-height: none; } }
 
+@media screen and (max-width: 1440px) {
+  .infoline__banner {
+    background-image: url(img/baner-mobile.png);
+    width: 150px;
+    display: none; } }
+
 @media (min-width: 576px) {
   .warranty {
     font-family: Georgia, serif;
@@ -7867,11 +7873,23 @@ del,
 .green {
   color: green; }
 
+.infoline__banner {
+  position: absolute;
+  top: 0;
+  width: 206px;
+  height: 100px;
+  background-image: url(img/baner-desktop.png);
+  background-size: contain;
+  background-position: center;
+  left: 1%;
+  background-repeat: no-repeat;
+  box-shadow: 12px 20px 10px -10px rgba(196, 194, 194, 0.5); }
+
 .header-main {
   color: #820000;
   margin-bottom: 30px;
   margin-top: 40px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1em;
   font-size: 40px;
   word-wrap: normal; }
@@ -7927,8 +7945,8 @@ h2 {
 
 .doc {
   float: left;
-  width: 30%;
-  margin-left: 15px; }
+  width: 41%;
+  margin-bottom: 10px; }
 
 .product {
   width: 32%; }
@@ -8144,10 +8162,10 @@ ol > li > p {
   box-shadow: 12px 20px 10px -10px rgba(196, 194, 194, 0.5); }
 
 .hvr-scaleLeft:hover {
-  transform: scale(1.4) translateX(117px); }
+  transform: scale(1.88) translateX(82px); }
 
 .hvr-scaleRight:hover {
-  transform: scale(1.4) translateX(-137px); }
+  transform: scale(2) translateX(-80px); }
 
 .footer a {
   color: grey;
