@@ -30,6 +30,14 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .infoline__banner {
+    background-image: url(../img/baner-mobile.png);
+    width: 150px;
+    display: none;
+  }
+}
+
 @media (min-width: 576px) {
   .warranty {
     font-family: Georgia, serif;
