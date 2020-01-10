@@ -7931,7 +7931,7 @@ h2 {
   margin-left: 15px; }
 
 .product {
-  width: 50%; }
+  width: 32%; }
 
 .spec {
   font-size: 22px;
@@ -8011,7 +8011,7 @@ main h2 {
   position: absolute;
   width: 100px;
   right: 180px;
-  bottom: 50px; }
+  bottom: 9px; }
 
 .fa-star:before {
   color: #ffe216; }
