@@ -7139,9 +7139,17 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 10px;
   position: relative;
   justify-content: space-between; }
+  @media screen and (max-width: 776px) {
+    .form-el {
+      display: block; }
+      .form-el input {
+        width: 100%; } }
 
 .form-control {
   width: 70%; }
+  @media screen and (max-width: 776px) {
+    .form-control {
+      width: 100%; } }
 
 input,
 .input-tooltip {
@@ -7154,6 +7162,9 @@ input,
   display: flex;
   flex-direction: row;
   width: 70%; }
+  @media screen and (max-width: 776px) {
+    .form-el--postCode {
+      width: 100%; } }
 
 .form > .form-el > label {
   font-weight: bold;
@@ -7219,6 +7230,9 @@ textarea {
 .input-tooltip {
   position: relative;
   width: 70%; }
+  @media screen and (max-width: 776px) {
+    .input-tooltip {
+      width: 100%; } }
 
 table.summary-tbl > tbody > tr > td {
   padding: 0 10px 0 10px; }
@@ -7852,6 +7866,9 @@ body {
   font-family: "Georgia", sans-serif;
   color: #3d3d3d; }
 
+.container {
+  margin: 0px auto; }
+
 .shipping,
 .special,
 .correction,
@@ -7943,13 +7960,35 @@ h2 {
     width: 160px;
     font-weight: bold; }
 
+@media (max-width: 760px) {
+  .doctor {
+    width: 70%;
+    display: block; } }
+
+@media (max-width: 560px) {
+  .doctor {
+    width: 100%;
+    display: block; } }
+
 .doc {
-  float: left;
-  width: 41%;
+  float: right;
+  width: 28%;
   margin-bottom: 10px; }
+  @media (max-width: 760px) {
+    .doc {
+      width: 100%;
+      margin: 0px auto; } }
 
 .product {
-  width: 45%; }
+  width: 130%; }
+  @media (max-width: 760px) {
+    .product {
+      width: 100%;
+      display: block; } }
+  @media (max-width: 560px) {
+    .product {
+      width: 80%;
+      display: block; } }
 
 .spec {
   font-size: 22px;
@@ -8060,10 +8099,16 @@ main h2 {
 
 .number-left {
   position: absolute;
-  right: -40px;
   top: 30%;
+  width: 70%;
   display: block;
-  width: 200px; }
+  width: 150px; }
+  @media screen and (max-width: 767px) {
+    .number-left {
+      max-width: 170px;
+      right: -50px;
+      top: 0px;
+      margin-left: 25%; } }
 
 @media screen and (max-width: 767px) {
   .number-left {
@@ -8077,11 +8122,11 @@ main h2 {
 
 .numbers-row {
   display: flex;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold; }
   .numbers-row span {
     background: linear-gradient(180deg, #6a6a6a 0%, #8a8a8a 6%, white 51%, #dbdbdb 87%, #8a8a8a 100%);
-    padding: 15px;
+    padding: 10px;
     margin: 3px;
     border-radius: 10px;
     border: 1px solid black; }
@@ -8177,7 +8222,6 @@ ol > li > p {
   font-family: "Lato", sans-serif; }
 
 figcaption {
-  max-width: 630px;
   background: #ddd;
   padding: 5px;
   text-align: center;
@@ -8238,11 +8282,7 @@ li {
     float: none;
     width: 150px;
     margin: 0 auto;
-    display: block; }
-  .doc {
-    float: right;
-    width: 40%;
-    margin-left: 0; } }
+    display: block; } }
 
 @media (min-width: 768px) {
   .ingredient {
@@ -8299,9 +8339,6 @@ li {
 @media (max-width: 768px) {
   #exitpopup-modal {
     display: none !important; }
-  .doc {
-    float: right;
-    width: 50%; }
   .header-main {
     font-size: 20px; }
   .yellow-box h4 {

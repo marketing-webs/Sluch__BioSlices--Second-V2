@@ -22,10 +22,19 @@
   margin-bottom: 10px;
   position: relative;
   justify-content: space-between;
+  @media screen and (max-width: 776px) {
+   display: block;
+   input {
+     width: 100%;
+   }
+  }
 }
 
 .form-control {
   width: 70%;
+  @media screen and (max-width: 776px) {
+    width: 100%;
+  }
 }
 input,
 .input-tooltip {
@@ -39,6 +48,9 @@ input,
   display: flex;
   flex-direction: row;
   width: 70%;
+  @media screen and (max-width: 776px) {
+    width: 100%;
+  }
 }
 .form > .form-el > label {
   font-weight: bold;
@@ -106,6 +118,9 @@ textarea {
 .input-tooltip {
   position: relative;
   width: 70%;
+  @media screen and (max-width: 776px) {
+    width: 100%;
+  }
 }
 table.summary-tbl > tbody > tr > td {
   padding: 0 10px 0 10px;
