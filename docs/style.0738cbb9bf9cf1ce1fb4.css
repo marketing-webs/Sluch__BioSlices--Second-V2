@@ -7169,6 +7169,9 @@ input,
 .form > .form-el > label {
   font-weight: bold;
   width: 28%; }
+  @media screen and (max-width: 776px) {
+    .form > .form-el > label {
+      width: 100%; } }
 
 .btn-order {
   display: block;
@@ -7980,15 +7983,23 @@ h2 {
       margin: 0px auto; } }
 
 .product {
-  width: 130%; }
+  width: 65%;
+  margin-left: 30%; }
+  @media (max-width: 960px) {
+    .product {
+      width: 70%;
+      margin-left: 30%;
+      display: block; } }
   @media (max-width: 760px) {
     .product {
       width: 100%;
-      display: block; } }
+      display: block;
+      margin-left: 27%; } }
   @media (max-width: 560px) {
     .product {
-      width: 80%;
-      display: block; } }
+      width: 70%;
+      display: block;
+      margin-left: 20%; } }
 
 .spec {
   font-size: 22px;
@@ -8069,6 +8080,14 @@ main h2 {
   width: 100px;
   right: 180px;
   bottom: 9px; }
+  @media (max-width: 767px) {
+    .satisfaction {
+      right: 213px;
+      bottom: 8%; } }
+  @media (max-width: 576px) {
+    .satisfaction {
+      right: 180px;
+      bottom: 9px; } }
 
 .fa-star:before {
   color: #ffe216; }
@@ -8103,6 +8122,9 @@ main h2 {
   width: 70%;
   display: block;
   width: 150px; }
+  @media screen and (max-width: 967px) {
+    .number-left {
+      display: none; } }
   @media screen and (max-width: 767px) {
     .number-left {
       max-width: 170px;
@@ -8340,7 +8362,8 @@ li {
   #exitpopup-modal {
     display: none !important; }
   .header-main {
-    font-size: 20px; }
+    font-size: 28px;
+    font-weight: 700; }
   .yellow-box h4 {
     font-size: 18px;
     line-height: 1.2; } }

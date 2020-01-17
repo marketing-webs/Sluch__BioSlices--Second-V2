@@ -55,6 +55,9 @@ input,
 .form > .form-el > label {
   font-weight: bold;
   width: 28%;
+  @media screen and (max-width: 776px) {
+    width: 100%;
+  }
 }
 .btn-order {
   display: block;

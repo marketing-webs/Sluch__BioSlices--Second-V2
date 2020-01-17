@@ -160,14 +160,22 @@ h2 {
 }
 
 .product {
-  width: 130%;
+  width: 65%;
+  margin-left: 30%;
+  @media (max-width: 960px) {
+    width: 70%;
+    margin-left: 30%;
+    display: block;
+  }
   @media (max-width: 760px) {
     width: 100%;
     display: block;
+    margin-left: 27%;
   }
   @media (max-width: 560px) {
-    width: 80%;
+    width: 70%;
     display: block;
+    margin-left: 20%;
   }
 }
 
@@ -266,6 +274,14 @@ main {
   width: 100px;
   right: 180px;
   bottom: 9px;
+  @media (max-width: 767px) {
+    right: 213px;
+    bottom: 8%;
+  }
+  @media (max-width: 576px) {
+    right: 180px;
+  bottom: 9px;
+  }
 }
 
 .fa-star:before {
@@ -313,6 +329,10 @@ main {
   width: 70%;
   display: block;
   width: 150px;
+  @media screen and (max-width: 967px) {
+    display: none;
+  }
+
   @media screen and (max-width: 767px) {
     max-width: 170px;
     right: -50px;
@@ -634,7 +654,8 @@ li {
     display: none !important;
   }
   .header-main {
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: 700;
   }
   .yellow-box h4 {
     font-size: 18px;
