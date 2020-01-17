@@ -125,7 +125,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      favicon: 'src/assets/img/favicon1.ico'
+      favicon: 'src/assets/img/favicon2.ico'
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
