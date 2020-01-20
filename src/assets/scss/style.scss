@@ -142,6 +142,10 @@ h2 {
   @media (max-width: 760px) {
     width: 70%;
     display: block;
+    img {
+      margin-bottom: 15px;
+    }
+  
   }
   @media (max-width: 560px) {
     width: 100%;
