@@ -139,6 +139,11 @@ h2 {
   }
 }
 .doctor {
+
+  img {
+    margin-left: 40px;
+  }
+
   @media (max-width: 760px) {
     width: 70%;
     display: block;
