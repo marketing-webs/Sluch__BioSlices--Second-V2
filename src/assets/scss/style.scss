@@ -55,6 +55,7 @@ del,
 .green {
   color: green;
 }
+
 .infoline__banner {
   position: absolute;
   top: 0;
@@ -67,6 +68,7 @@ del,
   background-repeat: no-repeat;
   box-shadow: 12px 20px 10px -10px rgba(196, 194, 194, 0.5);
 }
+
 .header-main {
   color: #820000;
   margin-bottom: 30px;
@@ -82,18 +84,20 @@ del,
     margin-bottom: 15px;
   }
 }
+
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #820000;
 }
+
 h2 {
   font-weight: 700;
   color: #cc0000;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 10px;
-  // padding-left: 10px;
 }
+
 .orange-txt {
   color: orangered;
   font-weight: bold;
@@ -141,23 +145,24 @@ h2 {
 
 .doc {
   float: right;
-  width:40%;
+  width: 40%;
   margin-bottom: 10px;
   margin-left: 40px;
+
   @media (max-width: 767px) {
     margin-left: 10px;
   }
-  
+
   @media (max-width: 425px) {
     width: 100%;
     margin: 0px auto;
-    margin-bottom: 20px;   
-  }  
+    margin-bottom: 20px;
+  }
 }
 
 .product {
   width: 80%;
-}  
+}
 
 .spec {
   font-size: 22px;
@@ -204,7 +209,7 @@ p {
 .navbar-brand {
   padding: 0 0 7px 0;
 
-  > img {
+  >img {
     height: 24px;
   }
 }
@@ -252,13 +257,15 @@ main {
   width: 100px;
   right: 180px;
   bottom: 9px;
+
   @media (max-width: 767px) {
     right: 213px;
     bottom: 8%;
   }
+
   @media (max-width: 576px) {
     right: 180px;
-  bottom: 9px;
+    bottom: 9px;
   }
 }
 
@@ -269,6 +276,7 @@ main {
 .hel {
   position: relative;
   z-index: 4;
+
   .warranty-head {
     font-size: 28px;
     font-weight: 700;
@@ -301,7 +309,7 @@ main {
   top: 30%;
   width: 70%;
   display: block;
-  width: 150px; 
+  width: 150px;
 
   @media (max-width: 767px) {
     position: relative;
@@ -315,15 +323,14 @@ main {
   display: flex;
   font-size: 25px;
   font-weight: bold;
+
   span {
-    background: linear-gradient(
-      180deg,
-      rgba(106, 106, 106, 1) 0%,
-      rgba(138, 138, 138, 1) 6%,
-      rgba(255, 255, 255, 1) 51%,
-      rgba(219, 219, 219, 1) 87%,
-      rgba(138, 138, 138, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(106, 106, 106, 1) 0%,
+        rgba(138, 138, 138, 1) 6%,
+        rgba(255, 255, 255, 1) 51%,
+        rgba(219, 219, 219, 1) 87%,
+        rgba(138, 138, 138, 1) 100%);
     padding: 10px;
     margin: 3px;
     border-radius: 10px;
@@ -343,6 +350,7 @@ main {
     line-height: 1.6em;
   }
 }
+
 // warranty ---->
 .hel {
   position: relative;
@@ -403,17 +411,18 @@ main {
   border: 1px solid #000;
   margin: 24px auto;
   padding: 4px 18px 12px;
+
   h4 {
     color: red;
   }
 }
 
 ol,
-ol > li > h4 {
+ol>li>h4 {
   font-weight: 700;
 }
 
-ol > li > p {
+ol>li>p {
   font-weight: 400;
   font-size: 16px !important;
 }
@@ -425,11 +434,13 @@ ol > li > p {
     z-index: 100;
     box-shadow: 12px 20px 10px -10px rgba(196, 194, 194, 0.5);
   }
+
   &Left {
     &:hover {
       transform: scale(1.88) translateX(82px);
     }
   }
+
   &Right {
     &:hover {
       transform: scale(2) translateX(-80px);
@@ -465,17 +476,21 @@ figcaption {
   list-style: none;
   counter-reset: my-awesome-counter;
   margin-bottom: 20px;
+
   p {
     color: black;
   }
+
   h2 {
     text-transform: uppercase;
   }
 }
+
 .green-ordered-list li {
   counter-increment: my-awesome-counter;
   color: red;
 }
+
 .green-ordered-list li::before {
   content: counter(my-awesome-counter, upper-roman) ". ";
   color: black;
@@ -611,10 +626,12 @@ li {
   #exitpopup-modal {
     display: none !important;
   }
+
   .header-main {
     font-size: 28px;
     font-weight: 700;
   }
+
   .yellow-box h4 {
     font-size: 18px;
     line-height: 1.2;
