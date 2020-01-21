@@ -89,7 +89,10 @@ module.exports = {
     rules: [{
         test: /\.html$/,
         use: [{
-          loader: 'html-loader'
+          loader: 'html-loader',
+          options: {
+            attrs: ['img:src', 'source:srcset']
+          }
         }]
       },
       {
