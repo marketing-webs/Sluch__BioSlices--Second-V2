@@ -21,7 +21,7 @@ export default class Popup {
             <div class="carousel-item active">
               <div class="cmt-caption">
                 <p class="popup__comment p-2">
-                Lata pracy w hałasie nie wpłynęły dobrze na mój słuch. W wieku 48 lat groziła mi głuchota! Byłam przerażona, kiedy usłyszałam taką diagnozę. Próbowałam naprawdę wszystkiego: aparatów słuchowych, świecowania, zastrzyków w bębenki, wszystko na nic. Na szczęście usłyszałam o AccuSound Day. To po prostu rewelacyjna kuracja. Poczułam znaczną różnicę już po 1. zastosowaniu. Żadnych szumów, trzasków, pisków. Słyszę wyraźnie każde słowo. Polecam! 
+                Lata pracy w hałasie nie wpłynęły dobrze na mój słuch. W wieku 48 lat groziła mi głuchota! Byłam przerażona, kiedy usłyszałam taką diagnozę. Próbowałam naprawdę wszystkiego: aparatów słuchowych, świecowania, zastrzyków w bębenki, wszystko na nic. Na szczęście usłyszałam o BioSlices. To po prostu rewelacyjna kuracja. Poczułam znaczną różnicę już po 1. zastosowaniu. Żadnych szumów, trzasków, pisków. Słyszę wyraźnie każde słowo. Polecam!
                 </p>
                 <span class="d-block px-2">Żaneta, Lublin</span>
               </div>
@@ -29,7 +29,7 @@ export default class Popup {
             <div class="carousel-item ">
               <div class="cmt-caption">
                 <p class="popup__comment p-2">
-                Przez problemy ze słuchem całkowicie zrezygnowałem z życia towarzyskiego. Głupio mi było ciągle dopytywać o to, co ktoś do mnie powiedział, a ja zwyczajnie tego nie słyszałem. Ile można mówić: „co, co, możesz powtórzyć?” O AccoSound powiedziała mi córka, która przypadkiem trafiła na stronę producenta tej niesamowitej kuracji. Już po kilku dniach słyszałem jak dawniej. Nie miałem problemów ze zrozumieniem słów nawet z dalszej odległości. Efekty przeszły moje najśmielsze oczekiwania!
+                Przez problemy ze słuchem całkowicie zrezygnowałem z życia towarzyskiego. Głupio mi było ciągle dopytywać o to, co ktoś do mnie powiedział, a ja zwyczajnie tego nie słyszałem. Ile można mówić: „co, co, możesz powtórzyć?” O BioSlices powiedziała mi córka, która przypadkiem trafiła na stronę producenta tej niesamowitej kuracji. Już po kilku dniach słyszałem jak dawniej. Nie miałem problemów ze zrozumieniem słów nawet z dalszej odległości. Efekty przeszły moje najśmielsze oczekiwania!
                 </p>
                 <span class="d-block px-2">Jerzy, Łódź</span>
               </div>
@@ -37,7 +37,7 @@ export default class Popup {
             <div class="carousel-item ">
               <div class="cmt-caption">
                 <p class="popup__comment p-2">
-                Muszę przyznać, że nigdy zamówienie jakiegoś produktu nie poszło mi tak szybko i sprawnie jak w przypadku AcooSound Day. Wypełniłem formularz w niecałe 2 minuty, a 2 dni później kurier zapukał do moich drzwi z przesyłką. Nie musiałem wpłacać pieniędzy przez internet, czego zawsze się obawiam. A kuracja? Działa cuda!
+                Muszę przyznać, że nigdy zamówienie jakiegoś produktu nie poszło mi tak szybko i sprawnie jak w przypadku BioSlices. Wypełniłem formularz w niecałe 2 minuty, a 2 dni później kurier zapukał do moich drzwi z przesyłką. Nie musiałem wpłacać pieniędzy przez internet, czego zawsze się obawiam. A kuracja? Działa cuda!
                 </p>
                 <span class="d-block px-2">Jarosław, Śląsk</span>
               </div>
@@ -53,7 +53,7 @@ export default class Popup {
             <div class="carousel-item ">
               <div class="cmt-caption">
                 <p class="popup__comment p-2">
-                Przez te aparaty słuchowe to ja majątek straciłam. Wydałam na nie ponad 20 tysięcy złotych, a nic to nie dawało. Dziadostwo mi tylko z ucha wypadało, ciągle je gubiłam. Nie wiem, co by było gdyby nie moja siostra. Pewnego dnia przyniosła mi cudowną formułę, która naprawdę mi pomogła. Po 28 dniach słyszę tak, jakbym znowu miała 20 lat. Polecam każdemu! 
+                Przez te aparaty słuchowe to ja majątek straciłam. Wydałam na nie ponad 20 tysięcy złotych, a nic to nie dawało. Dziadostwo mi tylko z ucha wypadało, ciągle je gubiłam. Nie wiem, co by było gdyby nie moja siostra. Pewnego dnia przyniosła mi cudowną formułę, która naprawdę mi pomogła. Po 28 dniach słyszę tak, jakbym znowu miała 20 lat. Polecam każdemu!
                 </p>
                 <span class="d-block px-2">Weronika, Ełk</span>
               </div>
@@ -61,7 +61,7 @@ export default class Popup {
             <div class="carousel-item ">
               <div class="cmt-caption">
                 <p class="popup__comment p-2">
-                Przez problemy ze słuchem wiecznie chodziłem rozdrażniony. Nie wysypiałem się, bolała mnie głowa, a jedyne, co słyszałem to nieznośne szumy i trzaski. No ogłupieć można po prostu! Nie da się tak długo funkcjonować, musiałem coś z tym zrobić. Zdecydowałem się już nawet na groźną operację, ale w porę usłyszałem o tej nowej kuracji. Zamówiłem i jestem zachwycony! Słyszę wszystko jak należy. Ostatnio byłem u spowiedzi i wyraźnie słyszałem każde słowo księdza.
+                Przez problemy ze słuchem wiecznie chodziłem rozdrażniony. Nie wysypiałem się, bolała mnie głowa, a jedyne, co słyszałem to nieznośne szumy i trzaski. No ogłupieć można po prostu! Nie da się tak długo funkcjonować, musiałem coś z tym zrobić. Zdecydowałem się już nawet na groźną operację, ale w porę usłyszałem o tej nowej kuracji. Zamówiłem i jestem zachwycony! Słyszę wszystko jak należy. Ostatnio byłem u spowiedzi i wyraźnie słyszałem każde słowo księdza. 
                 </p>
                 <span class="d-block px-2">Henryk, Olsztyn</span>
               </div>
@@ -88,7 +88,7 @@ export default class Popup {
   setupAnimations() {
     let animationFlag = 0;
 
-    $(".triggerBtn").click(function () {
+    $(".triggerBtn").click(function() {
       switch (animationFlag) {
         case 0:
           $("#popuplist").removeClass("hidePopup");
