@@ -620,3 +620,65 @@ li {
     line-height: 1.2;
   }
 }
+
+
+
+$phoneBoxColor : #001a79;
+
+.phone-box {
+  background: $phoneBoxColor;
+  max-width: 220px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  position: fixed;
+  box-shadow: 1px 1px 20px #0000003d;
+  
+  p {
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+
+  span {
+    width: 90%;
+    background: #fff;
+    display: block;
+    font-size: 28px;
+    margin: 0 auto;
+    text-align: center;
+    color: $phoneBoxColor;
+  }
+}
+
+@media (max-width: 1414px) {
+  .phone-box {
+    max-width: 150px;
+  }
+
+  span {
+    font-size: 20px !important;
+  }
+}
+
+@media(max-width: 1280px) {
+  .phone-box {
+    max-width: 137px;
+    padding: 10px 0;
+  }
+
+  span {
+    font-size: 18px !important;
+  }
+  p {
+    font-size: 12px !important;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1254px) {
+  .phone-box {
+    display: none;
+  }
+}
