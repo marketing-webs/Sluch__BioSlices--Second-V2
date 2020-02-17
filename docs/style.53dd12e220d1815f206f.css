@@ -7958,8 +7958,7 @@ h2 {
       margin-left: 10px; } }
   @media (max-width: 425px) {
     .doc {
-      width: 100%;
-      margin: 0px auto;
+      margin-left: 10px;
       margin-bottom: 20px; } }
 
 .product {
@@ -7997,6 +7996,14 @@ p {
   line-height: 25px;
   max-width: 980px;
   width: 100%; }
+
+.guarantee {
+  width: 80%;
+  display: block;
+  margin: auto; }
+  @media (max-width: 767px) {
+    .guarantee {
+      width: 100%; } }
 
 .main-content {
   margin: 20px;
