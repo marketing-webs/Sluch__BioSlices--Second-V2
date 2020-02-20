@@ -7201,6 +7201,9 @@ legend {
   background: linear-gradient(to bottom, white 0%, white 50%, #e7e6e6 50%, #e7e6e6 50%, #e7e6e6 100%);
   display: flex;
   width: auto !important; }
+  @media screen and (max-width: 776px) {
+    legend {
+      font-size: 18px; } }
 
 .myTooltip {
   background: #e4e4e4;
