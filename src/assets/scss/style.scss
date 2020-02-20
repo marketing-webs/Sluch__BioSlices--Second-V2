@@ -101,6 +101,20 @@ del,
   word-wrap: normal;
 }
 
+
+
+@media (max-width: 676px){
+  .baner_one {
+     display: none;
+  }
+}
+
+@media (min-width: 676px){
+  .baner_two {
+     display: none;
+  }
+}
+
 .main-list {
   li {
     margin-bottom: 15px;
@@ -226,7 +240,7 @@ li {
 
 main {
   h2 {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 }
 
@@ -544,6 +558,10 @@ li {
     margin: 0 auto;
     display: block;
   }
+  h2 {
+    margin-bottom: 21px;
+    font-size: 21px;
+  }
 
 }
 
@@ -629,13 +647,22 @@ li {
   }
 
   .header-main {
-    font-size: 28px;
+    margin-top: 10px !important;
+    font-size: 24px;
     font-weight: 700;
+    line-height: 27px;
   }
 
   .yellow-box h4 {
     font-size: 18px;
     line-height: 1.2;
+  }
+  .copywrites {
+    font-size: 12px !important;
+  }
+  .doctor{
+    width: 90%;
+    text-align: right;
   }
 }
 
@@ -676,7 +703,7 @@ $phoneBoxColor : #001a79;
   }
 
   span {
-    font-size: 20px !important;
+    font-size: 20px ;
   }
 }
 
@@ -687,11 +714,11 @@ $phoneBoxColor : #001a79;
   }
 
   span {
-    font-size: 18px !important;
+    font-size: 18px;
   }
   p {
-    font-size: 12px !important;
-    line-height: 16px;
+    font-size: 16px !important;
+    line-height: 18px;
   }
 }
 

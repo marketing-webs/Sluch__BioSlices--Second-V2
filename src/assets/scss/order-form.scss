@@ -1,4 +1,5 @@
 .form {
+  padding-top: 20px !important;
   width: 100%;
   margin: 0 auto;
   padding: 25px;
@@ -44,14 +45,29 @@ input,
     width: 100%;
   }
 }
+
 .form-el--postCode {
   display: flex;
   flex-direction: row;
   width: 70%;
+  justify-content: space-between;
   @media screen and (max-width: 776px) {
     width: 100%;
+    flex-direction: column;
   }
 }
+
+.form-el--postCode > input {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+  @media screen and (max-width: 776px) {
+    margin: 7px 0px;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 .form > .form-el > label {
   font-weight: bold;
   width: 28%;
@@ -70,9 +86,9 @@ legend {
   font-weight: bold;
   position: absolute;
   top: -12px;
-  background-color: white;
+  background: linear-gradient(to bottom, white 0%,white 50%,rgb(231, 230, 230) 50%,rgb(231, 230, 230) 50%,rgb(231, 230, 230) 100%);
   display: flex;
-  width: max-content;
+  width: auto !important;
 }
 .myTooltip {
   background: #e4e4e4;
@@ -113,9 +129,14 @@ textarea {
     padding: 5px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 993px) {
   .form {
-    width: 100%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .form {
+    width: 90%;
   }
 }
 .input-tooltip {
