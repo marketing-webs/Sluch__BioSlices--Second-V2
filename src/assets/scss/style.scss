@@ -183,18 +183,28 @@ p {
   font-size: 16px;
 }
 
+main {
+  margin-top: 20px;
+
+  @media (max-width: 575px) {
+    margin-top: 0;
+  }
+}
+
 .wrap {
   margin: 0 auto;
   min-height: 500px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid black;
   background: #fff;
   color: #3d3d3d;
   font-size: 16px;
   font-family: georgia;
   line-height: 25px;
-  max-width: 980px;
   width: 100%;
+
+  @media (max-width: 575px) {
+    border: 0;
+  }
 }
 
 .guarantee {
