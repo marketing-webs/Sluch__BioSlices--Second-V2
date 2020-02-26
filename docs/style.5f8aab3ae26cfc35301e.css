@@ -7066,13 +7066,16 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+aside {
+  z-index: 1; }
+
 .bor-spec {
   border-radius: 5px;
   background: #fff; }
 
 .card-box {
   background-color: white;
-  border: 3px inset green;
+  border: 3px inset #74c0d1;
   margin: 20px 20px 20px 25px;
   padding: 10px;
   text-align: center; }
@@ -7944,7 +7947,6 @@ del,
 .header-main {
   color: #820000;
   margin-bottom: 30px;
-  margin-top: 40px;
   font-weight: 500;
   line-height: 1em;
   font-size: 40px;
@@ -8033,12 +8035,24 @@ main {
       border: 0; } }
 
 .guarantee {
+  position: relative;
   width: 80%;
   display: block;
-  margin: auto; }
+  margin: auto;
+  z-index: 100;
+  margin-bottom: 20px; }
   @media (max-width: 767px) {
     .guarantee {
       width: 100%; } }
+
+@media (min-width: 992px) {
+  .ninth:hover {
+    cursor: pointer; }
+    .ninth:hover .guarantee {
+      z-index: 100;
+      transform: scale(1.25) translateX(110px);
+      transition: .5s;
+      border: 1px solid black; } }
 
 .main-content {
   margin: 20px;

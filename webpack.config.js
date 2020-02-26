@@ -137,7 +137,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      favicon: 'src/assets/img/favicon2.ico'
+      favicon: 'src/assets/img/favikone.ico'
     }),
     new CopyWebpackPlugin([{
       from: 'src/assets/img/popup_comments',

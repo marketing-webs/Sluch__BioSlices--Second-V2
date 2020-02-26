@@ -1,7 +1,7 @@
-//aside{
-//    padding-left: 5rem !important;
-//
-//}
+aside{
+  z-index: 1;
+
+}
 
 .bor-spec {
   border-radius: 5px;
@@ -10,7 +10,7 @@
 
 .card-box {
   background-color: white;
-  border: 3px inset green;
+  border: 3px inset #74c0d1;
   margin: 20px 20px 20px 25px;
   padding: 10px;
   text-align: center;

@@ -94,7 +94,6 @@ del,
 .header-main {
   color: #820000;
   margin-bottom: 30px;
-  margin-top: 40px;
   font-weight: 500;
   line-height: 1em;
   font-size: 40px;
@@ -208,12 +207,27 @@ main {
 }
 
 .guarantee {
+  position: relative;
   width: 80%;
   display: block;
   margin: auto;
+  z-index: 100 ;
+  margin-bottom: 20px;
 
   @media (max-width: 767px) {
     width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .ninth:hover {
+    cursor: pointer;
+    .guarantee {
+      z-index: 100 ;
+      transform: scale(1.25) translateX(110px);
+      transition: .5s;
+      border: 1px solid black;
+    }
   }
 }
 
