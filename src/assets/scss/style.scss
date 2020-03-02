@@ -699,7 +699,6 @@ li {
 }
 
 
-
 $phoneBoxColor: #74C0D1;
 
 .phone-box {
@@ -751,5 +750,29 @@ $phoneBoxColor: #74C0D1;
     @media (max-width: 1400px) {
       font-size: 17px;
     }
+  }
+}
+
+// countdown
+
+.numbers-row {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+
+  span {
+    background: $phoneBoxColor;
+    width: 60px;
+    height: 70px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 32px;
+    border: 2px solid #63a5b2;
   }
 }
