@@ -8387,44 +8387,63 @@ li {
     text-align: right; } }
 
 .phone-box {
-  background: #001a79;
-  max-width: 220px;
+  max-width: 230px;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
   position: fixed;
-  box-shadow: 1px 1px 20px #0000003d; }
+  top: 10px;
+  left: 10px;
+  background-color: #74C0D1;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif; }
+  @media (max-width: 1460px) {
+    .phone-box {
+      max-width: 200px; } }
+  @media (max-width: 1400px) {
+    .phone-box {
+      max-width: 120px; } }
+  @media (max-width: 1250px) {
+    .phone-box {
+      display: none; } }
   .phone-box p {
-    font-size: 13px;
-    text-align: center;
+    margin: 0;
+    font-size: 14px;
     color: #fff;
-    margin: 0; }
-  .phone-box span {
-    width: 90%;
-    background: #fff;
-    display: block;
-    font-size: 28px;
-    margin: 0 auto;
-    text-align: center;
-    color: #001a79; }
+    line-height: 20px;
+    font-weight: 700; }
+    @media (max-width: 1400px) {
+      .phone-box p {
+        font-size: 13px;
+        line-height: 15px; } }
+  .phone-box h3 {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #74C0D1;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5px 0; }
+    @media (max-width: 1400px) {
+      .phone-box h3 {
+        font-size: 17px; } }
 
-@media (max-width: 1414px) {
-  .phone-box {
-    max-width: 150px; }
-  span {
-    font-size: 20px; } }
-
-@media (max-width: 1280px) {
-  .phone-box {
-    max-width: 137px;
-    padding: 10px 0; }
-  span {
-    font-size: 18px; }
-  p {
-    font-size: 16px !important;
-    line-height: 18px; } }
-
-@media (max-width: 1254px) {
-  .phone-box {
-    display: none; } }
+.numbers-row {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold; }
+  .numbers-row span {
+    background: #74C0D1;
+    width: 60px;
+    height: 70px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 32px;
+    border: 2px solid #63a5b2; }
 
