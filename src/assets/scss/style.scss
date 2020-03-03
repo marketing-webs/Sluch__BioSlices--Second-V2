@@ -104,8 +104,6 @@ del,
   word-wrap: normal;
 }
 
-
-
 @media (max-width: 676px) {
   .baner_one {
     display: none;
@@ -141,7 +139,6 @@ h2 {
   color: orangered;
   font-weight: bold;
 }
-
 
 .doc {
   float: right;
@@ -230,7 +227,7 @@ main {
     .guarantee {
       z-index: 100;
       transform: scale(1.25) translateX(110px);
-      transition: .5s;
+      transition: 0.5s;
       border: 1px solid black;
     }
   }
@@ -244,7 +241,7 @@ main {
 .navbar-brand {
   padding: 0 0 7px 0;
 
-  >img {
+  > img {
     height: 24px;
   }
 }
@@ -360,12 +357,14 @@ main {
   font-weight: bold;
 
   span {
-    background: linear-gradient(180deg,
-        rgba(106, 106, 106, 1) 0%,
-        rgba(138, 138, 138, 1) 6%,
-        rgba(255, 255, 255, 1) 51%,
-        rgba(219, 219, 219, 1) 87%,
-        rgba(138, 138, 138, 1) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(106, 106, 106, 1) 0%,
+      rgba(138, 138, 138, 1) 6%,
+      rgba(255, 255, 255, 1) 51%,
+      rgba(219, 219, 219, 1) 87%,
+      rgba(138, 138, 138, 1) 100%
+    );
     padding: 10px;
     margin: 3px;
     border-radius: 10px;
@@ -453,11 +452,11 @@ main {
 }
 
 ol,
-ol>li>h4 {
+ol > li > h4 {
   font-weight: 700;
 }
 
-ol>li>p {
+ol > li > p {
   font-weight: 400;
   font-size: 16px !important;
 }
@@ -592,7 +591,6 @@ li {
     margin-bottom: 21px;
     font-size: 21px;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -698,8 +696,7 @@ li {
   }
 }
 
-
-$phoneBoxColor: #74C0D1;
+$phoneBoxColor: #74c0d1;
 
 .phone-box {
   max-width: 230px;
@@ -711,14 +708,14 @@ $phoneBoxColor: #74C0D1;
   text-align: center;
   padding: 5px 10px;
   border-radius: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   @media (max-width: 1460px) {
     max-width: 200px;
   }
 
   @media (max-width: 1400px) {
-    max-width: 120px;
+    max-width: 125px;
   }
 
   @media (max-width: 1250px) {
@@ -769,7 +766,7 @@ $phoneBoxColor: #74C0D1;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     border-radius: 10px;
     font-size: 32px;
