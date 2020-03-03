@@ -8051,7 +8051,7 @@ main {
     .ninth:hover .guarantee {
       z-index: 100;
       transform: scale(1.25) translateX(110px);
-      transition: .5s;
+      transition: 0.5s;
       border: 1px solid black; } }
 
 .main-content {
@@ -8392,17 +8392,17 @@ li {
   position: fixed;
   top: 10px;
   left: 10px;
-  background-color: #74C0D1;
+  background-color: #74c0d1;
   text-align: center;
   padding: 5px 10px;
   border-radius: 15px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
   @media (max-width: 1460px) {
     .phone-box {
       max-width: 200px; } }
   @media (max-width: 1400px) {
     .phone-box {
-      max-width: 120px; } }
+      max-width: 125px; } }
   @media (max-width: 1250px) {
     .phone-box {
       display: none; } }
@@ -8420,7 +8420,7 @@ li {
     font-size: 25px;
     line-height: 30px;
     font-weight: 700;
-    color: #74C0D1;
+    color: #74c0d1;
     background-color: #fff;
     border-radius: 5px;
     margin: 5px 0; }
@@ -8434,14 +8434,14 @@ li {
   font-size: 30px;
   font-weight: bold; }
   .numbers-row span {
-    background: #74C0D1;
+    background: #74c0d1;
     width: 60px;
     height: 70px;
     margin: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     border-radius: 10px;
     font-size: 32px;
