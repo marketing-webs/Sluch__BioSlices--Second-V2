@@ -241,7 +241,7 @@ main {
 .navbar-brand {
   padding: 0 0 7px 0;
 
-  > img {
+  >img {
     height: 24px;
   }
 }
@@ -357,14 +357,12 @@ main {
   font-weight: bold;
 
   span {
-    background: linear-gradient(
-      180deg,
-      rgba(106, 106, 106, 1) 0%,
-      rgba(138, 138, 138, 1) 6%,
-      rgba(255, 255, 255, 1) 51%,
-      rgba(219, 219, 219, 1) 87%,
-      rgba(138, 138, 138, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(106, 106, 106, 1) 0%,
+        rgba(138, 138, 138, 1) 6%,
+        rgba(255, 255, 255, 1) 51%,
+        rgba(219, 219, 219, 1) 87%,
+        rgba(138, 138, 138, 1) 100%);
     padding: 10px;
     margin: 3px;
     border-radius: 10px;
@@ -452,11 +450,11 @@ main {
 }
 
 ol,
-ol > li > h4 {
+ol>li>h4 {
   font-weight: 700;
 }
 
-ol > li > p {
+ol>li>p {
   font-weight: 400;
   font-size: 16px !important;
 }
@@ -771,5 +769,231 @@ $phoneBoxColor: #74c0d1;
     border-radius: 10px;
     font-size: 32px;
     border: 2px solid #63a5b2;
+  }
+}
+
+//  new for styles
+.form_wrapper {
+  padding: 40px 0 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @mixin error-style {
+    color: #d0251b;
+    padding-top: 0;
+    padding-bottom: 5px;
+    display: none;
+    text-align: right;
+  }
+
+  @mixin required-style {
+    display: none;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 5px;
+    color: blue;
+    text-align: right;
+  }
+
+  @media (min-width: 767px) {
+    max-width: 380px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 510px;
+  }
+
+  $color-base: #74c0d1;
+  $btn-bg-hover: #5198a8;
+
+  .form_title {
+    color: $color-base;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .input_group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .input_wrapper {
+      @media (min-width: 992px) {
+        width: 70%;
+      }
+    }
+
+    label {
+      font-family: "Open sans", sans-serif;
+      font-size: 17px;
+      line-height: 21px;
+      font-weight: 700;
+      color: #161616;
+      position: relative;
+
+      @media (min-width: 992px) {
+        width: 25%;
+      }
+    }
+
+    .required {
+      position: relative;
+
+      &::before {
+        content: "*";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        color: red;
+      }
+    }
+
+    .input {
+      font-family: "Open sans", sans-serif;
+      width: 100%;
+      border: 1px solid #d6d4d4;
+      border-radius: 4px;
+      color: #161616;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 8px 10px;
+    }
+  }
+
+  .button-wrapper {
+    padding: 10px 0;
+
+    #form_btn,
+    #form_btn2 {
+      font-family: "Open sans", sans-serif;
+      width: 100%;
+      text-decoration: underline;
+      font-size: 21px;
+      font-weight: 700;
+      border-radius: 4px;
+      background: $color-base;
+      border: none;
+      outline: none;
+      padding: 20px 10px;
+      color: #f2f9ff;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+
+      &:hover {
+        background-color: $btn-bg-hover;
+      }
+    }
+  }
+
+  .hover {
+    position: relative;
+
+    .hover_circle {
+      position: absolute;
+      z-index: 10;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      background-color: #dadada;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 5px;
+      background-image: url(../img/question.png);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        &::before {
+          content: "Dlaczego muszę podać nr telefonu? Podany nr zostanie automatycznie autoryzowany do kontaktu z naszym biurem obsługi klienta. Na podany numer może również kontaktować się firma kurierska w celu umówienia dogodnego dla Państwa terminu odbioru przesyłk";
+          position: absolute;
+          z-index: 10;
+          text-align: center;
+          width: 310px;
+          font-size: 14px;
+          border-radius: 10px;
+          color: #212121;
+          padding: 5px;
+          height: 155px;
+          background-color: #e4e4e4;
+          border: 1px solid black;
+          top: 50%;
+          left: -265px;
+          transform: translateY(-50%);
+
+          @media (min-width: 767px) {
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+
+  .hiden_form {
+    display: none;
+
+    .input-required {
+      @include required-style;
+    }
+
+    #postal_error,
+    #email_error,
+    #adress_error,
+    #city_error {
+      @include error-style;
+    }
+  }
+
+  .input-required {
+    @include required-style;
+  }
+
+  #name_error,
+  #surname_error,
+  #phone_error {
+    @include error-style;
+  }
+
+  .alertbox {
+    display: none;
+    color: #d0251b;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .alertbox.ok {
+    color: green;
+  }
+}
+
+.green {
+  color: #12d012;
+  font-size: 22px;
+}
+
+.surname {
+  display: none;
+}
+
+.yellow_wrapper {
+  background-color: #ffffe2;
+  border: 1px solid #131313;
+  padding: 10px;
+  margin: 15px 0;
+
+  p {
+    margin-bottom: 0;
   }
 }
