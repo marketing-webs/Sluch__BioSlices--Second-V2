@@ -64,7 +64,7 @@ $(document).ready(() => {
   }
 
   function validatePhone(phone) {
-    var isphone = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+    var isphone = /^[0-9]{9}$/g;
     return isphone.test(phone);
   }
 
@@ -79,7 +79,7 @@ $(document).ready(() => {
   }
 
   function cityCheck(city) {
-    var value = /^[a-zA-Z]+$/;
+    var value = /^[a-zA-Z]*[\s/a-zA-Z]+$/;
     return value.test(city);
   }
 

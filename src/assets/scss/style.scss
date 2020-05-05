@@ -241,7 +241,7 @@ main {
 .navbar-brand {
   padding: 0 0 7px 0;
 
-  >img {
+  > img {
     height: 24px;
   }
 }
@@ -357,12 +357,14 @@ main {
   font-weight: bold;
 
   span {
-    background: linear-gradient(180deg,
-        rgba(106, 106, 106, 1) 0%,
-        rgba(138, 138, 138, 1) 6%,
-        rgba(255, 255, 255, 1) 51%,
-        rgba(219, 219, 219, 1) 87%,
-        rgba(138, 138, 138, 1) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(106, 106, 106, 1) 0%,
+      rgba(138, 138, 138, 1) 6%,
+      rgba(255, 255, 255, 1) 51%,
+      rgba(219, 219, 219, 1) 87%,
+      rgba(138, 138, 138, 1) 100%
+    );
     padding: 10px;
     margin: 3px;
     border-radius: 10px;
@@ -450,11 +452,11 @@ main {
 }
 
 ol,
-ol>li>h4 {
+ol > li > h4 {
   font-weight: 700;
 }
 
-ol>li>p {
+ol > li > p {
   font-weight: 400;
   font-size: 16px !important;
 }
@@ -809,8 +811,8 @@ $phoneBoxColor: #74c0d1;
     max-width: 510px;
   }
 
-  $color-base: #0083B2;
-  $btn-bg-hover: #0A698C;
+  $color-base: #0083b2;
+  $btn-bg-hover: #0a698c;
 
   .form_title {
     color: $color-base;
@@ -946,6 +948,26 @@ $phoneBoxColor: #74c0d1;
 
   .hiden_form {
     display: none;
+
+    .delivery_wrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .img_wrapper {
+        max-width: 110px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+
+        @media (min-width: 540px) {
+          max-width: 120px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
 
     .input-required {
       @include required-style;
