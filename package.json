@@ -36,7 +36,7 @@
     "bootstrap": "^4.2.1",
     "copy-webpack-plugin": "^4.6.0",
     "easytimer.js": "^3.0.1",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6",
